@@ -1,0 +1,8 @@
+/*
+Notes:
+- 
+*/
+
+function bubbleSort(array) {
+  
+}
