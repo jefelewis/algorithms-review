@@ -20,14 +20,14 @@ function binarySearch(array, target){
     }
 
     // Search Right Side Of Array
-    if(target > middleIndex) {
+    if(target > araray[middleIndex]) {
       console.log("Searching the right side of Array")
       // Assign Start Index and increase the Index by 1 to narrow search
       startIndex = middleIndex + 1;
     }
 
     // Search Left Side Of Array
-    if(target < middleIndex) {
+    if(target < array[middleIndex]) {
       // Assign End Index and increase the Index by 1 to narrow search
       console.log("Searching the left side of array")
       endIndex = middleIndex - 1;
