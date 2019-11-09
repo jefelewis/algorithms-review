@@ -4,7 +4,7 @@ Notes:
 - Divide And Conquer
 */
 
-function binarySearch(array, target){
+const binarySearch = (array, target) => {
   // Define Start and End Index
   let startIndex = 0;
   let endIndex = array.length - 1;
@@ -20,7 +20,7 @@ function binarySearch(array, target){
     }
 
     // Search Right Side Of Array
-    if(target > araray[middleIndex]) {
+    if(target > array[middleIndex]) {
       console.log("Searching the right side of Array")
       // Assign Start Index and increase the Index by 1 to narrow search
       startIndex = middleIndex + 1;
