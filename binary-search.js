@@ -4,41 +4,42 @@ Notes:
 - Divide And Conquer
 */
 
+// Binary Search
 const binarySearch = (array, target) => {
-  // Define Start and End Index
+  // Define Start + End Index
   let startIndex = 0;
   let endIndex = array.length - 1;
 
-  // While Start Index is less than or equal to End Index
+  // While Start Index Is Less Than Or Equal To End Index
   while(startIndex <= endIndex) {
-    // Define Middle Index (This will change when comparing )
+    // Define Middle Index (This Will Change When Comparing )
     let middleIndex = Math.floor((startIndex + endIndex) / 2);
 
-    // Compare Middle Index with Target for match
+    // Compare Middle Index With Target For Match
     if(array[middleIndex] === target) {
-      return console.log("Target was found at index " + middleIndex);
+      return console.log('Target was found at index ' + middleIndex);
     }
 
     // Search Right Side Of Array
     if(target > array[middleIndex]) {
-      console.log("Searching the right side of Array")
-      // Assign Start Index and increase the Index by 1 to narrow search
+      console.log('Searching the right side of Array');
+      // Assign Start Index And Increase The Index By 1 To Narrow Search
       startIndex = middleIndex + 1;
     }
 
     // Search Left Side Of Array
     if(target < array[middleIndex]) {
-      // Assign End Index and increase the Index by 1 to narrow search
-      console.log("Searching the left side of array")
+      // Assign End Index And Increase The Index By 1 To Narrow Search
+      console.log('Searching the left side of array');
       endIndex = middleIndex - 1;
     }
 
-    // Not found in this iteration of the loop. Looping again.
+    // Not Found In This Iteration
     else {
-      console.log("Not Found this loop. Looping another time around.")
+      console.log('Not Found this loop. Looping again.');
     }
   }
 
   // If Target Is Not Found
-  console.log("Target value not found in array");
+  console.log('Target value not found in array');
 }
