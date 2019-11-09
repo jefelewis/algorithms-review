@@ -1,4 +1,4 @@
-# Algorithms
+# Algorithms Review
 *  [Search Algorithms](#search-algorithms)
 *  [Sorting Algorithms](#sorting-algorithms)
 
