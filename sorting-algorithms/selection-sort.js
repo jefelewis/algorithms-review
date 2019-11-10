@@ -46,7 +46,7 @@ const selectionSort = (array) => {
       }
 
       // Swap Numbers
-      swapNumbers(array, i, minIndex)
+      swapNumbers(array, i, minIndex);
     }
 
     // Return
