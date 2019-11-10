@@ -6,6 +6,11 @@ Notes:
 - Recursive?
 */
 
+/*
+Example:
+let array = [10, 4, 2, 5, 2, 1, 9, 0];
+*/
+
 // Merge
 const merge = (leftArray, rightArray) => {
   try {
@@ -23,16 +28,17 @@ const merge = (leftArray, rightArray) => {
     // While Left Index Is Less Than Left Length And Right Right Index Is Less Than Right Length
     while (leftIndex < leftLength && rightIndex < rightLength) {
       if (leftArray[leftIndex] < rightArray[rightIndex]) {
-        mergedArray.push(leftArray[leftIndex + 1]);
+        // WHY CAN'T THIS BE leftIndex + 1??
+        mergedArray.push(leftArray[leftIndex++]);
       }
       else {
+        // WHY CAN'T THIS BE leftIndex + 1??
         mergedArray.push(rightArray[rightIndex + 1]);
       }
     }
 
     // Return Merged Array?
     return mergedArray.concat(leftArray.slice(leftIndex)).concat(rightArray.slice(rightIndex));
-
   }
   catch (error) {
     console.log(error);
@@ -47,12 +53,12 @@ const mergeSort = (array) => {
       return array;
     }
     else {
-      // Midpoint (Parse Int??)
-      let midpoint = parseInt(array.length / 2);
+      // Midpoint
+      let midpoint = Math.floor(array.length / 2);
 
       // 
       let leftArray = array.slice(0, midpoint);
-      let rightArray = array.slice(midpoint, arr.length);
+      let rightArray = array.slice(midpoint, array.length);
 
       // Recursively Merge
       return merge(mergeSort(leftArray), mergeSort(rightArray));
