@@ -1,0 +1,59 @@
+/*
+Notes:
+- 
+*/
+
+/*
+Example:
+let array = [10, 4, 2, 5, 2, 1, 9, 0];
+*/
+
+// Swap Numbers
+const swapNumbers = (array, i, j) => {
+  try {
+    // Save Element Value (Because It Will Change When We Swap/Reassign)
+    let temp = array[i];
+
+    // Assign Element2 To Element1
+    array[i] = array[j];
+
+    // Assign Element1 To Element2
+    array[j] = temp;
+  }
+  catch (error) {
+    console.log(error);
+  }
+};
+
+// Selection Sort
+const selectionSort = (array) => {
+  try {
+    // Min Index + Temp
+    let minIndex = null;
+    let temp = null;
+
+    // Iterate Over
+    for (let i = 0; i < array.length; i++) {
+      // 
+      minIndex = i;
+
+      // Iterate
+      for (let j = i + 1; j < array.length; j++) {
+        // Check If 
+        if (array[j] < array[minIndex]) {
+          // 
+          minIndex = j;
+        }
+      }
+
+      // Swap Numbers
+      swapNumbers(array, i, minIndex)
+    }
+
+    // Return
+    return array;
+  }
+  catch (error) {
+    console.log(error);
+  }
+};
