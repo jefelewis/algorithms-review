@@ -4,7 +4,7 @@
 
 ## Search Algorithms
 * Linear Search
-* Binary Search
+* [Binary Search](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-explained-binary-search-25064b896470)
 
 * A* Search (Pending)
 * Dijkstra's (Pending)
@@ -12,7 +12,7 @@
 * Depth First Search (DFS)
 
 ## Sorting Algorithms
-* Bubble Sort
+* [Bubble Sort](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-what-is-bubble-sort-a-detailed-step-by-step-and-example-code-dfd136daa3b)
 
 * Merge Sort (Pending)
 * Quick Sort (Pending)
