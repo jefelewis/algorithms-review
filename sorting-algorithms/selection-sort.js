@@ -31,16 +31,16 @@ const selectionSort = (array) => {
     // Min Index
     let minIndex = null;
 
-    // Iterate Over
+    // Iterate Over Array
     for (let i = 0; i < array.length; i++) {
-      // 
+      // Min Index
       minIndex = i;
 
-      // Iterate
+      // Iterate Over Array
       for (let j = i + 1; j < array.length; j++) {
         // Check If 
         if (array[j] < array[minIndex]) {
-          // 
+          // Min Index
           minIndex = j;
         }
       }
