@@ -16,4 +16,4 @@
 * Insertion Sort (Pending)
 * Merge Sort
 * Quick Sort (Pending)
-* Selection Sort (Pending)
+* Selection Sort
