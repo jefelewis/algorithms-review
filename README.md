@@ -5,7 +5,6 @@
 ## Search Algorithms
 * Linear Search
 * [Binary Search](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-explained-binary-search-25064b896470)
-
 * A* Search (Pending)
 * Dijkstra's (Pending)
 * Breadth First Search (BFS)
