@@ -17,3 +17,4 @@
 * Merge Sort (Pending)
 * Quick Sort (Pending)
 * Heap Sort (Pending)
+* Insertion Sort (Pending)
