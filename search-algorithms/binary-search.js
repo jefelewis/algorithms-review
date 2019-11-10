@@ -42,4 +42,4 @@ const binarySearch = (array, target) => {
 
   // If Target Is Not Found
   console.log('Target value not found in array');
-}
+};
