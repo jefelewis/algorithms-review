@@ -28,9 +28,8 @@ const swapNumbers = (array, i, j) => {
 // Selection Sort
 const selectionSort = (array) => {
   try {
-    // Min Index + Temp
+    // Min Index
     let minIndex = null;
-    let temp = null;
 
     // Iterate Over
     for (let i = 0; i < array.length; i++) {
