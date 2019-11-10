@@ -13,8 +13,8 @@
 
 ## Sorting Algorithms
 * [Bubble Sort](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-what-is-bubble-sort-a-detailed-step-by-step-and-example-code-dfd136daa3b)
-
-* Merge Sort (Pending)
-* Quick Sort (Pending)
 * Heap Sort (Pending)
 * Insertion Sort (Pending)
+* Merge Sort
+* Quick Sort (Pending)
+* Selection Sort (Pending)
