@@ -23,7 +23,7 @@ const insertionSort = (array) => {
 
       // Iterate Over Array Backwards (Comparison Index Must Be Greater Or Equal To 0 And Greater Than The Selected Element)
       for (comparisonIndex = i - 1; comparisonIndex >= 0 && array[comparisonIndex] > selectedElement; comparisonIndex--) {
-        console.log(`Comparison Index: ${comparisonIndex}`);
+        console.log(`Comparison Element: ${array[comparisonIndex]}`);
 
         // Swap Index Values
         console.log(`Swapping ${array[comparisonIndex + 1]} for ${array[comparisonIndex]}`);
@@ -31,7 +31,7 @@ const insertionSort = (array) => {
       }
 
       // Insert Selected Element
-      console.log(`Selected Element (${selectedElement}) inserted at index ${comparisonIndex + 1}`);
+      console.log(`${selectedElement} inserted at index ${comparisonIndex + 1}`);
       array[comparisonIndex + 1] = selectedElement;
     }
 
