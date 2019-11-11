@@ -26,7 +26,7 @@ const insertionSort = (array) => {
         console.log(`Comparison Index: ${comparisonIndex}`);
 
         // Swap Index Values
-        console.log(`Swapping ${array[comparisonIndex + 1]} for ${array[comparisonIndex]}`)
+        console.log(`Swapping ${array[comparisonIndex + 1]} for ${array[comparisonIndex]}`);
         array[comparisonIndex + 1] = array[comparisonIndex];
       }
 
