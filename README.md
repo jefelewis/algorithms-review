@@ -13,7 +13,7 @@
 ## Sorting Algorithms
 * [Bubble Sort](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-what-is-bubble-sort-a-detailed-step-by-step-and-example-code-dfd136daa3b)
 * Heap Sort (Pending)
-* Insertion Sort (Pending)
+* [Insertion Sort](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-what-is-insertion-sort-a-detailed-step-by-step-and-example-code-a8908e041a82)
 * Merge Sort
 * Quick Sort (Pending)
 * Selection Sort
