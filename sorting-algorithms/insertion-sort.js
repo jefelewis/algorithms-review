@@ -16,18 +16,23 @@ const insertionSort = (array) => {
   try {
     // Iterate Over Array
     for (let i = 0; i < array.length; i++) {
-      // Marker + Comparison Index
-      let marker = array[i];
+      // Selected Element + Comparison Index
+      let selectedElement = array[i];
       let comparisonIndex = null;
+      console.log(`Selected Element: ${selectedElement}`);
 
-      // Iterate Over Array Backwards (J Must Be Greater or Equal To 0 And Greater Than The Marker)
-      for (comparisonIndex = i - 1; comparisonIndex >= 0 && array[comparisonIndex] > marker; comparisonIndex--) {
+      // Iterate Over Array Backwards (Comparison Index Must Be Greater Or Equal To 0 And Greater Than The Selected Element)
+      for (comparisonIndex = i - 1; comparisonIndex >= 0 && array[comparisonIndex] > selectedElement; comparisonIndex--) {
+        console.log(`Comparison Index: ${comparisonIndex}`);
+
         // Swap Index Values
+        console.log(`Swapping ${array[comparisonIndex + 1]} for ${array[comparisonIndex]}`)
         array[comparisonIndex + 1] = array[comparisonIndex];
       }
 
-      // What??
-      array[comparisonIndex + 1] = marker;
+      // Insert Selected Element
+      console.log(`Selected Element (${selectedElement}) inserted at index ${comparisonIndex + 1}`);
+      array[comparisonIndex + 1] = selectedElement;
     }
 
     // Return Array
