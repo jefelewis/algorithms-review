@@ -14,8 +14,8 @@ let array = [10, 4, 2, 5, 2, 1, 9, 0];
 // Insertion Sort
 const insertionSort = (array) => {
   try {
-    // Iterate Over Array
-    for (let i = 0; i < array.length; i++) {
+    // Iterate Over Array (Starts At 1 Because Nothing Left Of Index 0)
+    for (let i = 1; i < array.length; i++) {
       // Selected Element + Comparison Index
       let selectedElement = array[i];
       let comparisonIndex = null;
